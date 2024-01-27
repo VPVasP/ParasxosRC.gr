@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ParasxosRC.gr">
+    <title>ParasxosRC.gr-</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .w3-bar {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+
+        .w3-bar-item {
+            padding: 14px 16px;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            color: #000000;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .w3-bar-item:hover {
+            background-color: #24292E;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .Παλίατεχνικάάρθρα-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-item {
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            background-color:#24292E;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .project-item h3 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .profileImage-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-right: 50px;
+        }
+        .banner-image {
+            width: 700px;
+            height: 200px;
+            border-radius:0;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .article-container{
+         font-size: 22px; 
+         margin-bottom: 15px; 
+        }
+
+         #About p {
+         font-size: 22px; 
+         margin-bottom: 15px; 
+         }
+
+        
+        hr {
+      border: 1px solid black;
+    }
+    </style>
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+            
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+            
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+            
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+        function openNewTab(content) {
+      
+        var newTab = window.open('', '_blank');
+
+        newTab.document.write('<html><head><title>New Tab</title></head><body>');
+        newTab.document.write(content);
+        newTab.document.write('</body></html>');
+        newTab.document.close();
+    }
+    </script>
+</head>
+
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <button class="w3-bar-item" onclick="openTab('Αρχική')">Αρχική </button>
+        <button class="w3-bar-item" onclick="openTab('Παλία τεχνικά άρθρα')">Παλία τεχνικά άρθρα</button>
+        <button class="w3-bar-item" onclick="openTab('Τα μοντέλα μας')">Τα μοντέλα μας</button>
+        <button class="w3-bar-item" onclick="openTab('Video των μοντέλων μας')">Video των μοντέλων μας</button>
+        <button class="w3-bar-item" onclick="openTab('Οι φίλοι μας')">Οι φίλοι μας</button>
+        <button class="w3-bar-item" onclick="openTab('Επικοινωνία')">Επικοινωνία</button>
+    </div>
+   
+    <div id="Αρχική" class="tab-content active">
+        <img src="https://www.siliconrepublic.com/wp-content/uploads/2022/11/AdobeStock_20136083-718x523.jpeg" alt="Description of the site" class="banner-image">
+        <h2>Αρχική Σελίδα</h2>
+        <div class="profileImage-container">
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/parasxo-foto2.jpg" alt="Description of the site" class="profile-image">
+            <img src="https://scontent.fath5-1.fna.fbcdn.net/v/t1.6435-9/29425433_10155723226329081_4356919742523506688_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=be3454&_nc_ohc=_N-IRoKqkYcAX9mEUvT&_nc_ht=scontent.fath5-1.fna&oh=00_AfC7yYk1vrd2wMXEM4w5Ka9xBVZzkyfHsFregUmEYw9Vnw&oe=65DB667C" alt="Description of the site" class="profile-image">
+        </div>
+        <p>Καλώς ήλθατε στο Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη!</p>
+        <p>Η σελίδα δημιουργήθηκε από την αγάπη μας για το χόμπυ του Αερομοντελισμού και την επιθυμία μας να βοηθήσουμε τους νέους αερομοντελιστές.</p>
+        <p>Δεν ξεχνάμε τις δυσκολίες που αντιμετωπίσαμε πριν από 20 χρόνια, αλλά αυτές μας προσέφεραν γνώσεις και εμπειρίες.</p>
+        <p>Στη σελίδα θα παρουσιάζουμε τεχνικές κατασκευής και άλλα τεχνικά θέματα, ενώ θα είμαστε ανοιχτοί για συζητήσεις.</p>
+        <p>Καινούργιοι φίλοι μας, ελάτε σε επαφή για βοήθεια σε θέματα κατασκευής και πετάγματος.</p>
+        <p>Παράσχος και Βασίλης Δεμίρης.</p>
+
+    </div>
+    </div>
+
+    <div id="Παλία τεχνικά άρθρα" class="tab-content">
+        <h2>Παλία τεχνικά άρθρα</h2>
+        <h2>Τεχνικές Κατασκευής</h2>
+        <ul class="Παλίατεχνικάάρθρα-list">
+            <li class="Παλία τεχνικά άρθρα">
+               
+                <li class="Παλία τεχνικά άρθρα">
+                <h3>Οκτώβριος 2003 Κατασκευή ακροπτερυγίων</h3><h3>
+                <hr>
+                <h3>Νοέμβριος 2003 Εύκολα σκέλη προσγείωσης για χαμηλοπτέρυγα</h3>
+                <hr>
+                <h3>Δεκέμβριος 2003 Κατασκευή CANOPY</h3>
+                <hr>
+                <h3>Ιανουάριος 2004 Το Σούπερ Μανταλάκι Κατασκευή Φθηνών ντιζών με σπείρωμα</h3>
+                <hr>
+                <h3>Φεβρουάριος 2004 Μέτρηση Right και Down Thrust</h3>
+                <hr>
+                <h3>Μάρτιος 2004 Κατασκευή Τρύπας Κυλινδροκεφαλής COWL-Πως μαζεύουμε εύκολα τις βίδες</h3>
+                <hr>
+                <h3>Απρίλιος 2004 Σύνδεση ενός SERVO με διπλό ELEVATOR –Επισκευή τρύπιας δεξαμενής καυσίμου</h3>
+                <hr>
+                <h3>Μάιος 2004 Εύρεση κέντρου βάρους για όλα τα είδη των πτερύγων μονοπλάνων</h3>
+                <hr>
+                <h3>Ιούνιος 2004 Εύρεση κέντρου βαρους διπλάνων</h3>
+                <hr>
+                <h3>Ιούλιος 2004 – Επικάλυψη μοντέλων με υφασμάτινη φόδρα</h3>
+                <hr>
+                <h3>ΑΥΓΟΥΣΤΟΣ 2004 Εύκολη κατασκευή αλουμινιενιων στυριγμάτων σκελών προσγειωσης</h3>
+                <hr>
+                <h3>Σεπτέμβριος-2004 Το βάψιμο των μοντέλων-μέρος 1ο</h3>
+                <hr>
+                <h3>Οκτώβριος 2004 Το βάψιμο των μοντέλων–μέρος 2ο</h3>
+                <hr>
+                <h3>Νοέμβριος 2004 Το βάψιμο των μοντέλων μέρος 3ο</h3>
+                <hr>
+                <h3>Δεκέμβριος 2004 Το βάψιμο των μοντέλων μέρος 4ο: Γράμματα και σχέδια</h3>
+                <hr>
+                <h3>Ιανουάριος 2005 Το βάψιμο των μοντέλων-μέρος 5ο: Στεγανοποίηση/πλαστικοποίηση φόδρας</h3>
+                <hr>
+                <h3>Φεβρουαριος 2005 κατασκευη αεροσυμπιεστου</h3>
+                <hr>
+                <h3>Μάρτιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 1ο</h3>
+                <hr>
+                <h3>Απρίλιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 2ο</h3>
+                <hr>
+                <h3>Μάιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 3o-κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Ιούνιος 2005 Κατασκευή αερομοντέλλου από την αρχή –4η Κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Ιούλιος 2005 Κατασκευή αερομοντέλλου από την αρχή- 5η συνέχεια: Κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Αύγουστος 2005 Κατασκευή αερομοντέλου από την αρχή: Κατασκευή ατράκτου</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2005 Κατασκευή αερομοντέλου από την αρχή: Κατασκευή ατράκτου (συνέχεια)</h3>
+                <hr>
+                <h3>Οκτώβριος 2005 Κατασκευή αερομοντέλλου από την αρχή,τελευταίο άρθρο</h3>
+                <hr>
+                <h3>Νοέμβρης 2005 Αντιγραφή σχεδίου στη BALSA</h3>
+                <hr>
+                <h3>Ιανουάριος 2006 Πως σημαδεύουμε ακριβώς τις τρύπες της βάσεως της μηχανής</h3>
+                <hr>
+                <h3>Ιουνιος 2008 Κατασκευή Horn</h3>
+                <hr>
+                <h3>Ιανουαριος 2009 Ελαστική σύνδεση servo– ρινεου</h3>
+                <hr>
+                <h3>Ιούνιος 2009 Εύκολη κατασκευή υδραυλικών φρένων</h3>
+                <hr>
+                <h3>Ιουλιος 2009 LINEAR REGULATION</h3>
+                <hr>
+                <h3>Αυγουστος 2009 Tηλεχειριζόμενα λαμπάκια στο αεροπλάνο</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2009 Κατασκευή πηδαλίων κλήσεως (elerons)</h3>
+                <hr>
+                <h3>Οκτόμβριος 2009 Στήριξη του servo στην πτέρυγα</h3>
+                <hr>
+                <h3>Νοέμβριος 2009 Κατασκευή φλαντζών</h3>
+                <hr>
+                <h3>Δεκέμβριος 2009 Παράθυρα Αεροπλάνων.</h3>
+                <hr>
+                <h3>Ιανουάριος 2010 τοποθέτηση πτέρυγας και ουραίου</h3>
+                <hr>
+                <h3>Φεβρουαριος 2010 Κοπή depron</h3>
+                <hr>
+                <h3>Μαρτιος 2010 φρένα ηλεκτρικά μικρών αεροπλάνων</h3>
+                <hr>
+                <h3>Απρίλιος 2010 Τοποθέτιση κεντρικού δοκού foam πτέριγας</h3>
+                <hr>
+                <h3>Μάιος 2010 Λαμπάκια στο αεροπλάνο Νο2</h3>
+                <hr>
+                <h3>Ιούνιος 2010 Εμφανιστήριο πλακετών ηλεκτρονικών κυκλωμάτων</h3>
+                <hr>
+                <h3>Ιουλιος 2010 Σχεδίαση ηλεκτρονικών κυκλωμάτων σε διαφάνεια</h3>
+                <hr>
+                <h3>Αυγουστος 2010 Μεταφορά του ηλεκτρονικού σχεδίου στην διαφάνεια</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2010 Κατασκευή μηχανικού Εξομοιωτή πτήσεως</h3>
+                <hr>
+                <h3>Οκτώβριος 2010 Κατασκευή ανεμομέτρου</h3>
+                <hr>
+                <h3>Νοέμβριος 2010 Ρυθμίσεις ανεμομέτρου</h3>
+                <hr>
+                <h3>Δεκεμβριος 2010 Ελαφριές Ρόδες</h3>
+                <hr>
+                <h3>Φεβρουάριος 2011 Επισκευή Αερομοντέλου μέρος 1ο</h3>
+                <hr>
+                <h3>Μάρτιος 2011 επισκευή αερομοντελου μέρος 2ο</h3>
+                <hr>
+                <h3>Απρίλιος 20011 Επισκευή Αερομοντελου μερος 3ο</h3>
+                <hr>
+                <h3>Μάιος 2011 Επισκευή Αερομοντελου μέρος 4o</h3>
+                
+    </div>
+
+    <div id="Τα μοντέλα μας" class="tab-content">
+        <h2 style="color: white;">Τα μοντέλα μας</h2>
+        <p>Εργαστήριο</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/ergastirio1.jpg" alt="Εργαστήριο Image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>Εργαστήριο</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/ergastirio31.jpg" alt="Εργαστήριο Image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>Εργαστήριο</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/ergast121.jpg" alt="Εργαστήριο Image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>A-7 CORSAIR</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/a72.jpg" alt="A-7 CORSAIR" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>HUNDER</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/hander.jpg" alt="Hunder Image" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>F-4 PHANTOM</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/fantom-f4.jpg" alt="F-4 Phantom" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>CANADAIR  CL-215</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/canader.jpg" alt="CANADAIR  CL-215" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p>EXTRA</p>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/cesna.jpg" alt="EXTRA" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+
+    <div id="Video των μοντέλων μας" class="tab-content">
+        <h2 style="color: white;">Video των μοντέλων μας</h2>
+        <p>Video των μοντέλων μας</p>
+        <p>Ιδιοκατασκευη A7 Corsair Σπατα, 1993</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GdtUddenw6w" frameborder="0" allowfullscreen></iframe>
+        <p>Ακροβατικά με μια δικη μας εκδοση του Supra Fly στα Σπάτα το 1995.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzUrv8NkG6o" frameborder="0" allowfullscreen></iframe>
+        <p>Αγώνες Limbo, Dounis Airfield.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0hTAxl2xWTA" frameborder="0" allowfullscreen></iframe>
+        <p>Διπλανο Stamp (Ιδιοκατασκευη).</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/h6g5lmidA2o" frameborder="0" allowfullscreen></iframe>
+        <p>Canadair CL-215, (Ιδιοκατασκευη) Αναβυσσος 1998</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-Na06oB7Ug" frameborder="0" allowfullscreen></iframe>
+        <p>F4- Phantom (Κατασκευή απο σχέδιο) 2003, Αναβυσσος.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/StaIzNt6MIQ" frameborder="0" allowfullscreen></iframe>
+        <p>Σπατα 1993, Ιδιοκατασκευη. Πτηση με πολυ αερα.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bQDbdkhh7lg" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="Οι φίλοι μας" class="tab-content">
+        <h2 style="color: white; font-size: 24px; margin-top: 10px;">Οι φίλοι μας</h2>
+        <p style="text-align: center; font-size: 30px; margin-bottom: 60px;">Οι φίλοι μας</p>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="text-align: center;">
+                <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/bratimos-150x150.jpg" alt="Κώστας Μπράτιμος">
+                <p>Κώστας Μπράτιμος</p>
+            </div>
+    
+            <div style="text-align: center;">
+                <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/dimitris_tzanis-150x150.jpg" alt="Δημήτρης Τζανής">
+                <p>Δημήτρης Τζανής</p>
+            </div>
+    
+            <div style="text-align: center;">
+                <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/johny-150x150.jpg" alt="Γιάννης Μινιώτης">
+                <p>Γιάννης Μινιώτης</p>
+            </div>
+    
+            <div style="text-align: center;">
+                <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/karas-150x150.jpg" alt="Γιώργος Καρασούλας">
+                <p>Γιώργος Καρασούλας</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="Επικοινωνία" class="tab-content">
+        <h2 style="color: white;">Επικοινωνία</h2>
+        <p>Επικοινωνία:</p>
+</html>
