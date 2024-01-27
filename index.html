@@ -105,7 +105,19 @@
          font-size: 22px; 
          margin-bottom: 15px; 
         }
+        .article-content {
+        text-align: center; 
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px; 
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
+    .article-content p {
+        margin-bottom: 15px;
+    }
          #About p {
          font-size: 22px; 
          margin-bottom: 15px; 
@@ -130,16 +142,22 @@
             
             console.log("Tab content:", selectedTab.innerHTML);
         }
-        function openNewTab(content) {
-      
+    </script>
+ <script>
+    function openArticleInNewTab(articleName) {
         var newTab = window.open('', '_blank');
 
-        newTab.document.write('<html><head><title>New Tab</title></head><body>');
-        newTab.document.write(content);
+        newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+
+        var selectedArticle = document.getElementById(articleName);
+        newTab.document.write(selectedArticle.innerHTML);
+
         newTab.document.write('</body></html>');
+
+        newTab.document.title = articleName;
         newTab.document.close();
     }
-    </script>
+</script>
 </head>
 
 <body>
@@ -153,7 +171,8 @@
         <button class="w3-bar-item" onclick="openTab('Οι φίλοι μας')">Οι φίλοι μας</button>
         <button class="w3-bar-item" onclick="openTab('Επικοινωνία')">Επικοινωνία</button>
     </div>
-   
+    <div class="articleBar">
+    </div>
     <div id="Αρχική" class="tab-content active">
         <img src="https://www.siliconrepublic.com/wp-content/uploads/2022/11/AdobeStock_20136083-718x523.jpeg" alt="Description of the site" class="banner-image">
         <h2>Αρχική Σελίδα</h2>
@@ -173,12 +192,13 @@
 
     <div id="Παλία τεχνικά άρθρα" class="tab-content">
         <h2>Παλία τεχνικά άρθρα</h2>
+        <hr>
         <h2>Τεχνικές Κατασκευής</h2>
         <ul class="Παλίατεχνικάάρθρα-list">
             <li class="Παλία τεχνικά άρθρα">
                
                 <li class="Παλία τεχνικά άρθρα">
-                <h3>Οκτώβριος 2003 Κατασκευή ακροπτερυγίων</h3><h3>
+                    <h3><a href="javascript:void(0);" onclick="openArticleInNewTab('Κατασκευή_ακροπτερυγίων')" style="color: black; text-decoration: none;">Οκτώβριος 2003 Κατασκευή ακροπτερυγίων</a></h3>
                 <hr>
                 <h3>Νοέμβριος 2003 Εύκολα σκέλη προσγείωσης για χαμηλοπτέρυγα</h3>
                 <hr>
@@ -351,4 +371,36 @@
     <div id="Επικοινωνία" class="tab-content">
         <h2 style="color: white;">Επικοινωνία</h2>
         <p>Επικοινωνία:</p>
+
+
+
+        <div id="Κατασκευή_ακροπτερυγίων" class="article-content" style="text-align: center;">
+            <p style="text-align: center; font-size: 2em;">10/2003 Κατασκευή ακροπτερυγίων.</p>
+            <hr>
+            
+            <p style="font-size: 1.5em;">Οι περισσότεροι αερομοντελιστές αγοράζουν τώρα μοντέλλα ARF (Almost Ready to Fly-προκατασκευασμένα) και τα περισσότερα ράφια στα καταστήματα, στην Ελλάδα και στο εξωτερικό, είναι πλέον γεμάτα με αυτά τα μοντέλα.</p>
+    
+            <p style="font-size: 1.5em;">Αλλά αυτό δεν σημαίνει ότι τα μοντέλα ARF… δεν σπάνε! Συνήθως (ανάλογα και με την εταιρεία) η κατασκευή τους είναι μάλλον πρόχειρη και εύθραστη. Αν πρόκειται για μικροβλάβες, διορθώνουμε το μοντέλο και δεν το πετάμε στα σκουπίδια.</p>
+            
+            <p style="font-size: 1.5em;">Τα ακροπτερύγια είναι από τα πιο ευαίσθητα μέρη και αυτά που παθαίνουν βλάβες σε μια “άγαρμπη” προσγείωση ή ανεπιτυχή απογείωση.</p>
+            <hr>
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/05/acro_13.jpg" alt="2003 Article" style="max-width: 100%; height: auto; margin-top: 20px;">
+            
+            <p style="font-size: 1.5em;">Κολλάμε πρώτα στην άκρη της αεροτομής ένα μπλοκ χοντρής μπάλσας που δεν είναι ανάγκη να είναι μονοκόμματο, μπορεί να έχουμε κολλήσει κομμάτια scrap μπάλσας, με κυανοακριλική κολλα.</p>
+            <hr>
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/05/acro_2.jpg" alt="2003 Article" style="max-width: 100%; height: auto; margin-top: 20px;">
+            
+            <p style="font-size: 1.5em;">Ξακρίζουμε σε χοντρές γραμμές την μπάλσα, ακολουθώντας το σχήμα της αεροτομής.</p>
+            <hr>
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/05/acro_31.jpg" alt="2003 Article" style="max-width: 100%; height: auto; margin-top: 20px;">
+            
+            <p style="font-size: 1.5em;">Αρχίζουμε να δίνουμε το τελικό σχήμα και τις καμπύλες, με το τριβείο.</p>
+            <hr>
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/05/acro_41.jpg" alt="2003 Article" style="max-width: 100%; height: auto; margin-top: 20px;">
+            
+            <p style="font-size: 1.5em;">Να προσθέσουμε και κάτι που έχουμε βρει αρκετά χρήσιμο: Αφού τελειώσει η κατασκευή του ακροπτερυγίου όπως περιγράφεται πιο πάνω, μπορούμε να το περάσουμε με ένα στρώμα υαλοϋφασμα-εποξική κόλλα και μετά να το γυαλοχαρτάρουμε με ψιλό γυαλόχαρτο, ώστε να είναι έτοιμο για βάψιμο ή επικάλυψη. Κατ αυτόν τον τρόπο η μπάλσα δεν “βουλιάζει” με το παραμικρό άγγιγμα στο έδαφος.</p>
+            <hr>
+            <p style="font-size: 1.5em;">Παράσχος & Βασίλης Δεμίρης.</p>
+        </div>
+        
 </html>
