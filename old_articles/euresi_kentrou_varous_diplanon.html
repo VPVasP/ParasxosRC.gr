@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ιούνιος 2004 – Εύρεση κέντρου βάρους διπλάνω</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <a href="../index.html">
+            <button class="w3-bar-item">Αρχική </button>
+        </a>
+        <a href="../old_articles.html">
+            <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
+        </a>
+
+        <a href="../our_models.html">
+            <button class="w3-bar-item">Τα μοντέλα μας</button>
+        </a>
+        <a href="../videos.html">
+            <button class="w3-bar-item">Video των μοντέλων μας</button>
+        </a>
+        <a href="../our_friends.html">
+            <button class="w3-bar-item">Οι φίλοι μας</button>
+        </a>
+        <a href="../contact.html">
+            <button class="w3-bar-item">Επικοινωνία</button>
+        </a>
+    </div>
+    <div class="articleBar">
+    </div>
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+    
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+    
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+    
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    
+        function openArticleInNewTab(articleName) {
+            var newTab = window.open('', '_blank');
+    
+            newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+            var selectedArticle = document.getElementById(articleName);
+            newTab.document.write(selectedArticle.innerHTML);
+    
+            newTab.document.write('</body></html>');
+    
+            newTab.document.title = articleName;
+            newTab.document.close();
+        }
+        
+    </script>
+     <div id="Εύρεση κέντρου βάρους διπλάνων" class="article-content" style="text-align: center;">
+        <p style="text-align: center; font-size: 2em;">6/2004 Κατασκευή ακροπτερυγίων.</p>
+        <hr>
+
+        <p style="font-size: 1.5em;">Όπως είχαμε υποσχεθεί ολοκληρώνουμε τη μέθοδο προσθέτοντας τον τρόπο εύρεσης κέντρου βάρους και για τα διπλάνα.</p>
+
+        <p style="font-size: 1.5em;">Η ακολουθία των κινήσεων που πρέπει να γίνουν είναι η ίδια με των μονοπλάνων (βλέπετε άρθρο προηγούμενου μήνα). </p>
+
+        <hr>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2004/06/diplana1.jpg" alt="2004 Article"
+            style="max-width: 100%; height: auto; margin-top: 20px;">
+
+        <p style="font-size: 1.5em;">Κέντρο βάρους για ίσιες πτέρυγες (χωρίς κλίση). Στο σχήμα φαίνεται η κάτοψη των πτερύγων -όπως φαίνονται από επάνω. </p>
+        <hr>
+        <img src="https://parasxosrc.gr/wp-content/uploads/2004/06/diplana2.jpg" alt="2004 Article"
+            style="max-width: 100%; height: auto; margin-top: 20px;">
+
+        <p style="font-size: 1.5em;">Κέντρο βάρους για πτέρυγες με κλίση. Στο σχήμα φαίνεται πάλι η κάτοψη των πτερύγων.</p>
+        <hr>
+        <p style="font-size: 1.5em;">Παράσχος & Βασίλης Δεμίρης.</p>
+    </div>
+
+</body>
+</html>
+

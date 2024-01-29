@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>10/2003 Κατασκευή ακροπτερυγίων</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>ParasxosRC.gr</h1>
     Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
     <div class="w3-bar">
-        <a href="index.html">
+        <a href="../index.html">
             <button class="w3-bar-item">Αρχική </button>
         </a>
-        <a href="old_articles.html">
+        <a href="../old_articles.html">
             <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
         </a>
 
-        <a href="our_models.html">
+        <a href="../our_models.html">
             <button class="w3-bar-item">Τα μοντέλα μας</button>
         </a>
-        <a href="videos.html">
+        <a href="../videos.html">
             <button class="w3-bar-item">Video των μοντέλων μας</button>
         </a>
-        <a href="our_friends.html">
+        <a href="../our_friends.html">
             <button class="w3-bar-item">Οι φίλοι μας</button>
         </a>
-        <a href="contact.html">
+        <a href="../contact.html">
             <button class="w3-bar-item">Επικοινωνία</button>
         </a>
     </div>
     <div class="articleBar">
     </div>
-
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+    
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+    
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+    
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    
+        function openArticleInNewTab(articleName) {
+            var newTab = window.open('', '_blank');
+    
+            newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+            var selectedArticle = document.getElementById(articleName);
+            newTab.document.write(selectedArticle.innerHTML);
+    
+            newTab.document.write('</body></html>');
+    
+            newTab.document.title = articleName;
+            newTab.document.close();
+        }
+    </script>
 
 
 

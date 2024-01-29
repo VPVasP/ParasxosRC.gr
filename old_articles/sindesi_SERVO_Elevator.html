@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Σύνδεση ενός SERVO με διπλό ELEVATOR -Επισκευή τρύπιας δεξαμενής καυσίμου</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <a href="../index.html">
+            <button class="w3-bar-item">Αρχική </button>
+        </a>
+        <a href="../old_articles.html">
+            <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
+        </a>
+
+        <a href="../our_models.html">
+            <button class="w3-bar-item">Τα μοντέλα μας</button>
+        </a>
+        <a href="../videos.html">
+            <button class="w3-bar-item">Video των μοντέλων μας</button>
+        </a>
+        <a href="../our_friends.html">
+            <button class="w3-bar-item">Οι φίλοι μας</button>
+        </a>
+        <a href="../contact.html">
+            <button class="w3-bar-item">Επικοινωνία</button>
+        </a>
+    </div>
+    <div class="articleBar">
+    </div>
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+    
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+    
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+    
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    
+        function openArticleInNewTab(articleName) {
+            var newTab = window.open('', '_blank');
+    
+            newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+            var selectedArticle = document.getElementById(articleName);
+            newTab.document.write(selectedArticle.innerHTML);
+    
+            newTab.document.write('</body></html>');
+    
+            newTab.document.title = articleName;
+            newTab.document.close();
+        }
+    </script>
+   <div id="Σύνδεση ενός SERVO με διπλό ELEVATOR -Επισκευή τρύπιας δεξαμενής καυσίμου" class="article-content"
+   style="text-align: center;">
+   <p style="text-align: center; font-size: 2em;">4/2004–Σύνδεση ενός SERVO με διπλό ELEVATOR -Επισκευή τρύπιας
+       δεξαμενής καυσίμου</p>
+   <hr>
+
+   <p style="font-size: 1.5em;">Σύνδεση ενός SERVO με δυο ELEVATOR.</p>
+
+   <img src="https://parasxosrc.gr/wp-content/uploads/2004/03/cowl1a.jpg" alt="2004 Article"
+       style="max-width: 100%; height: auto; margin-top: 20px;">
+   <p style="font-size: 1.5em;">Μια απλή ιδέα σύνδεσης ενός SERVO με δύο ELEVATOR ή ενός SERVO με
+       FLAPSχρησιμοποιώντας μια ηλεκτρολογική κλέμμα .Υπάρχει το πλεονέκτημα της εύκολης ρύθμισης όλων των
+       μερών.</p>
+   <hr>
+   <p style="font-size: 1.5em;">Επισκευή τρύπιας δεξαμενής καυσίμου.</p>
+   <hr>
+   <p style="font-size: 1.5em;">Υπάρχει η εντύπωση ότι η δεξαμενή καυσίμου όταν τρυπήσει δεν μπορεί να
+       κολληθεί. Όμως μπορεί να κολληθεί χρησιμοποιώντας θερμοκόλλα, αρκεί το πιστόλι να είναι αρκετά θερμό, να
+       βάλουμε μια σταγόνα κόλλα μέσα στην τρύπα και περισσότερη κόλλα απ’ έξω.</p>
+   <img src="https://parasxosrc.gr/wp-content/uploads/2004/04/constr_tank11.jpg" alt="2004 Article"
+       style="max-width: 100%; height: auto; margin-top: 20px;">
+
+   <p style="font-size: 1.5em;">Με μαρκαδόρο είναι σημαδεμένη η τρύπα.</p>
+   <hr>
+   <img src="https://parasxosrc.gr/wp-content/uploads/2004/04/constr_tank3.jpg" alt="2004 Article"
+       style="max-width: 100%; height: auto; margin-top: 20px;">
+   <p style="font-size: 1.5em;">Με πολύ ζεστό το πιστόλι της θερμοκόλλας, βάζουμε κόλλα στην τρύπα και
+       περισσότερη μετά απ έξω. Το πλαστικό του τεπόζιτου λυώνει και γίνεται ένα σώμα με την θερμοκόλλα.</p>
+   <hr>
+   <img src="https://parasxosrc.gr/wp-content/uploads/2004/04/constr_tank2.jpg" alt="2004 Article"
+       style="max-width: 100%; height: auto; margin-top: 20px;">
+   <p style="font-size: 1.5em;">Το τεπόζιτο είναι έτοιμο, κολλημένο.</p>
+   <hr>
+   <p style="font-size: 1.5em;"> Παρασχος & Βασιλης Δεμιρης.</p>
+</div>
+</body>
+</html>
