@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    </script>
+        <script>
+            function openArticleInNewTab(articleName) {
+                var newTab = window.open('', '_blank');
+    
+                newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+                var selectedArticle = document.getElementById(articleName);
+                newTab.document.write(selectedArticle.innerHTML);
+    
+                newTab.document.write('</body></html>');
+    
+                newTab.document.title = articleName;
+                newTab.document.close();
+            }
+        </script>
+</head>
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <a href="index.html">
+            <button class="w3-bar-item">Αρχική </button>
+        </a>
+
+        <a href="old_articles.html">
+            <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
+        </a>
+
+        <a href="our_models.html">
+            <button class="w3-bar-item">Τα μοντέλα μας</button>
+        </a>
+        <a href="videos.html">
+            <button class="w3-bar-item">Video των μοντέλων μας</button>
+        </a>
+        <a href="our_friends.html">
+            <button class="w3-bar-item">Οι φίλοι μας</button>
+        </a>
+        <a href="contact.html">
+        <button class="w3-bar-item">Επικοινωνία</button>
+    </a>
+    </div>
+    <div class="articleBar">
+    </div>
+    <h2 style="color: white;">Video των μοντέλων μας</h2>
+    <p>Video των μοντέλων μας</p>
+    <p>Ιδιοκατασκευη A7 Corsair Σπατα, 1993</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GdtUddenw6w" frameborder="0"
+        allowfullscreen></iframe>
+    <p>Ακροβατικά με μια δικη μας εκδοση του Supra Fly στα Σπάτα το 1995.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZzUrv8NkG6o" frameborder="0"
+        allowfullscreen></iframe>
+    <p>Αγώνες Limbo, Dounis Airfield.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0hTAxl2xWTA" frameborder="0"
+        allowfullscreen></iframe>
+    <p>Διπλανο Stamp (Ιδιοκατασκευη).</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h6g5lmidA2o" frameborder="0"
+        allowfullscreen></iframe>
+    <p>Canadair CL-215, (Ιδιοκατασκευη) Αναβυσσος 1998</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L-Na06oB7Ug" frameborder="0"
+        allowfullscreen></iframe>
+    <p>F4- Phantom (Κατασκευή απο σχέδιο) 2003, Αναβυσσος.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/StaIzNt6MIQ" frameborder="0"
+        allowfullscreen></iframe>
+    <p>Σπατα 1993, Ιδιοκατασκευη. Πτηση με πολυ αερα.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQDbdkhh7lg" frameborder="0"
+        allowfullscreen></iframe>
+</body>
+</html>
+

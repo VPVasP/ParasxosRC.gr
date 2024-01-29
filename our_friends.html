@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    </script>
+        <script>
+            function openArticleInNewTab(articleName) {
+                var newTab = window.open('', '_blank');
+    
+                newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+                var selectedArticle = document.getElementById(articleName);
+                newTab.document.write(selectedArticle.innerHTML);
+    
+                newTab.document.write('</body></html>');
+    
+                newTab.document.title = articleName;
+                newTab.document.close();
+            }
+        </script>
+</head>
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <a href="index.html">
+            <button class="w3-bar-item">Αρχική </button>
+        </a>
+
+        <a href="old_articles.html">
+            <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
+        </a>
+
+        <a href="our_models.html">
+            <button class="w3-bar-item">Τα μοντέλα μας</button>
+        </a>
+        <a href="videos.html">
+            <button class="w3-bar-item">Video των μοντέλων μας</button>
+        </a>
+        <a href="our_friends.html">
+            <button class="w3-bar-item">Οι φίλοι μας</button>
+        </a>
+        <a href="contact.html">
+        <button class="w3-bar-item">Επικοινωνία</button>
+    </a>
+    </div>
+    <div class="articleBar">
+    </div>
+    <h2 style="color: white; font-size: 24px; margin-top: 10px;">Οι φίλοι μας</h2>
+    <p style="text-align: center; font-size: 30px; margin-bottom: 60px;">Οι φίλοι μας</p>
+    <div style="display: flex; justify-content: space-around;">
+        <div style="text-align: center;">
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/bratimos-150x150.jpg" alt="Κώστας Μπράτιμος">
+            <p>Κώστας Μπράτιμος</p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/dimitris_tzanis-150x150.jpg"
+                alt="Δημήτρης Τζανής">
+            <p>Δημήτρης Τζανής</p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/johny-150x150.jpg" alt="Γιάννης Μινιώτης">
+            <p>Γιάννης Μινιώτης</p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="https://parasxosrc.gr/wp-content/uploads/2009/04/karas-150x150.jpg" alt="Γιώργος Καρασούλας">
+            <p>Γιώργος Καρασούλας</p>
+        </div>
+    </div>
+</body>
+</html>
+

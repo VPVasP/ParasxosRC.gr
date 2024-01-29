@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openTab(tabName) {
+            console.log("Switching to tab:", tabName);
+
+            var tabs = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = "none";
+            }
+
+            var selectedTab = document.getElementById(tabName);
+            selectedTab.style.display = "block";
+
+            console.log("Tab content:", selectedTab.innerHTML);
+        }
+    </script>
+        <script>
+            function openArticleInNewTab(articleName) {
+                var newTab = window.open('', '_blank');
+    
+                newTab.document.write('<html lang="en"><head><title>' + articleName + '</title></head><body>');
+    
+                var selectedArticle = document.getElementById(articleName);
+                newTab.document.write(selectedArticle.innerHTML);
+    
+                newTab.document.write('</body></html>');
+    
+                newTab.document.title = articleName;
+                newTab.document.close();
+            }
+        </script>
+</head>
+<body>
+    <h1>ParasxosRC.gr</h1>
+    Μοντελιστικό SITE του Παράσχου και Βασίλη Δεμίρη
+    <div class="w3-bar">
+        <a href="index.html">
+            <button class="w3-bar-item">Αρχική </button>
+        </a>
+
+        <a href="old_articles.html">
+            <button class="w3-bar-item">Παλία τεχνικά άρθρα</button>
+        </a>
+
+        <a href="our_models.html">
+            <button class="w3-bar-item">Τα μοντέλα μας</button>
+        </a>
+        <a href="videos.html">
+            <button class="w3-bar-item">Video των μοντέλων μας</button>
+        </a>
+        <a href="our_friends.html">
+            <button class="w3-bar-item">Οι φίλοι μας</button>
+        </a>
+        <a href="contact.html">
+        <button class="w3-bar-item">Επικοινωνία</button>
+    </a>
+    </div>
+    <div class="articleBar">
+    </div>
+    <h2>Παλία τεχνικά άρθρα</h2>
+        <hr>
+        <h2>Τεχνικές Κατασκευής</h2>
+        <ul class="Παλίατεχνικάάρθρα-list">
+            <li class="Παλία τεχνικά άρθρα">
+
+            <li class="Παλία τεχνικά άρθρα">
+                <h3><a href="old_articles/kataskeui_akropterugiwn.html"
+                        style="color: black; text-decoration: none;">Οκτώβριος 2003 Κατασκευή ακροπτερυγίων</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);"
+                        onclick="openArticleInNewTab('Εύκολα σκέλη προσγείωσης για χαμηλοπτέρυγα')"
+                        style="color: black; text-decoration: none;">
+                        Νοέμβριος 2003 Εύκολα σκέλη προσγείωσης για χαμηλοπτέρυγα</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);" onclick="openArticleInNewTab('Κατασκευή CANOPY')"
+                        style="color: black; text-decoration: none;">
+                        Δεκέμβριος 2003 Κατασκευή CANOPY</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);" onclick="openArticleInNewTab('Το Σούπερ Μανταλάκι')"
+                        style="color: black; text-decoration: none;">
+                        Ιανουάριος 2004 Το Σούπερ Μανταλάκι Κατασκευή Φθηνών ντιζών με σπείρωμα</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);"
+                        onclick="openArticleInNewTab('Μέτρηση RIGHT και DOWN THRUST της μηχανής.')"
+                        style="color: black; text-decoration: none;">
+                        Φεβρουάριος 2004 – Μέτρηση RIGHT και DOWN THRUST της μηχανής</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);"
+                        onclick="openArticleInNewTab('Κατασκευή τρύπας κυλινδροκεφαλής στο COWL – Πως μαζεύουμε εύκολα τις βίδες')"
+                        style="color: black; text-decoration: none;">
+                        Μάρτιος 2004 Κατασκευή Τρύπας Κυλινδροκεφαλής COWL-Πως μαζεύουμε εύκολα τις βίδες</a></h3>
+                <hr>
+                <h3><a href="javascript:void(0);"
+                        onclick="openArticleInNewTab('Σύνδεση ενός SERVO με διπλό ELEVATOR -Επισκευή τρύπιας δεξαμενής καυσίμου')"
+                        style="color: black; text-decoration: none;">
+                        Απρίλιος 2004 – Σύνδεση ενός SERVO με διπλό ELEVATOR -Επισκευή τρύπιας δεξαμενής καυσίμου</a>
+                </h3>
+                <hr>
+                <h3><a href="javascript:void(0);"
+                        onclick="openArticleInNewTab('Εύρεση κέντρου βάρους για όλα τα είδη των πτερύγων μονοπλάνων')"
+                        style="color: black; text-decoration: none;">
+                        Μάιος 2004 – Εύρεση κέντρου βάρους για όλα τα είδη των πτερύγων μονοπλάνων</a></h3>
+                <hr>
+                <h3>Ιούνιος 2004 Εύρεση κέντρου βαρους διπλάνων</h3>
+                <hr>
+                <h3>Ιούλιος 2004 – Επικάλυψη μοντέλων με υφασμάτινη φόδρα</h3>
+                <hr>
+                <h3>ΑΥΓΟΥΣΤΟΣ 2004 Εύκολη κατασκευή αλουμινιενιων στυριγμάτων σκελών προσγειωσης</h3>
+                <hr>
+                <h3>Σεπτέμβριος-2004 Το βάψιμο των μοντέλων-μέρος 1ο</h3>
+                <hr>
+                <h3>Οκτώβριος 2004 Το βάψιμο των μοντέλων–μέρος 2ο</h3>
+                <hr>
+                <h3>Νοέμβριος 2004 Το βάψιμο των μοντέλων μέρος 3ο</h3>
+                <hr>
+                <h3>Δεκέμβριος 2004 Το βάψιμο των μοντέλων μέρος 4ο: Γράμματα και σχέδια</h3>
+                <hr>
+                <h3>Ιανουάριος 2005 Το βάψιμο των μοντέλων-μέρος 5ο: Στεγανοποίηση/πλαστικοποίηση φόδρας</h3>
+                <hr>
+                <h3>Φεβρουαριος 2005 κατασκευη αεροσυμπιεστου</h3>
+                <hr>
+                <h3>Μάρτιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 1ο</h3>
+                <hr>
+                <h3>Απρίλιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 2ο</h3>
+                <hr>
+                <h3>Μάιος 2005 Κατασκευή αερομοντέλλου από την αρχή, μέρος 3o-κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Ιούνιος 2005 Κατασκευή αερομοντέλλου από την αρχή –4η Κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Ιούλιος 2005 Κατασκευή αερομοντέλλου από την αρχή- 5η συνέχεια: Κατασκευή πτέρυγας</h3>
+                <hr>
+                <h3>Αύγουστος 2005 Κατασκευή αερομοντέλου από την αρχή: Κατασκευή ατράκτου</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2005 Κατασκευή αερομοντέλου από την αρχή: Κατασκευή ατράκτου (συνέχεια)</h3>
+                <hr>
+                <h3>Οκτώβριος 2005 Κατασκευή αερομοντέλλου από την αρχή,τελευταίο άρθρο</h3>
+                <hr>
+                <h3>Νοέμβρης 2005 Αντιγραφή σχεδίου στη BALSA</h3>
+                <hr>
+                <h3>Ιανουάριος 2006 Πως σημαδεύουμε ακριβώς τις τρύπες της βάσεως της μηχανής</h3>
+                <hr>
+                <h3>Ιουνιος 2008 Κατασκευή Horn</h3>
+                <hr>
+                <h3>Ιανουαριος 2009 Ελαστική σύνδεση servo– ρινεου</h3>
+                <hr>
+                <h3>Ιούνιος 2009 Εύκολη κατασκευή υδραυλικών φρένων</h3>
+                <hr>
+                <h3>Ιουλιος 2009 LINEAR REGULATION</h3>
+                <hr>
+                <h3>Αυγουστος 2009 Tηλεχειριζόμενα λαμπάκια στο αεροπλάνο</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2009 Κατασκευή πηδαλίων κλήσεως (elerons)</h3>
+                <hr>
+                <h3>Οκτόμβριος 2009 Στήριξη του servo στην πτέρυγα</h3>
+                <hr>
+                <h3>Νοέμβριος 2009 Κατασκευή φλαντζών</h3>
+                <hr>
+                <h3>Δεκέμβριος 2009 Παράθυρα Αεροπλάνων.</h3>
+                <hr>
+                <h3>Ιανουάριος 2010 τοποθέτηση πτέρυγας και ουραίου</h3>
+                <hr>
+                <h3>Φεβρουαριος 2010 Κοπή depron</h3>
+                <hr>
+                <h3>Μαρτιος 2010 φρένα ηλεκτρικά μικρών αεροπλάνων</h3>
+                <hr>
+                <h3>Απρίλιος 2010 Τοποθέτιση κεντρικού δοκού foam πτέριγας</h3>
+                <hr>
+                <h3>Μάιος 2010 Λαμπάκια στο αεροπλάνο Νο2</h3>
+                <hr>
+                <h3>Ιούνιος 2010 Εμφανιστήριο πλακετών ηλεκτρονικών κυκλωμάτων</h3>
+                <hr>
+                <h3>Ιουλιος 2010 Σχεδίαση ηλεκτρονικών κυκλωμάτων σε διαφάνεια</h3>
+                <hr>
+                <h3>Αυγουστος 2010 Μεταφορά του ηλεκτρονικού σχεδίου στην διαφάνεια</h3>
+                <hr>
+                <h3>Σεπτέμβριος 2010 Κατασκευή μηχανικού Εξομοιωτή πτήσεως</h3>
+                <hr>
+                <h3>Οκτώβριος 2010 Κατασκευή ανεμομέτρου</h3>
+                <hr>
+                <h3>Νοέμβριος 2010 Ρυθμίσεις ανεμομέτρου</h3>
+                <hr>
+                <h3>Δεκεμβριος 2010 Ελαφριές Ρόδες</h3>
+                <hr>
+                <h3>Φεβρουάριος 2011 Επισκευή Αερομοντέλου μέρος 1ο</h3>
+                <hr>
+                <h3>Μάρτιος 2011 επισκευή αερομοντελου μέρος 2ο</h3>
+                <hr>
+                <h3>Απρίλιος 20011 Επισκευή Αερομοντελου μερος 3ο</h3>
+                <hr>
+                <h3>Μάιος 2011 Επισκευή Αερομοντελου μέρος 4o</h3>
+</body>
+</html>
